@@ -13,17 +13,20 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Hi, \(user.name)")
+            Text("Hi, \(user.user.name)")
                 .font(.largeTitle)
                 .padding(.top, 100)
             Text(timer.counter.formatted())
                 .font(.largeTitle)
                 .padding(.top, 100)
             Spacer()
-            
-            ButtonView(timer: timer)
-            
+            ButtonView(title: timer.buttonTitle, color: .blue) {
+                timer.startTimer()
+            }
             Spacer()
+            ButtonView(title: "Log out", color: .red) {
+                DataManager.shared.clear(userManager: user)
+            }
         }
     }
 }
@@ -36,18 +39,27 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct ButtonView: View {
-    @ObservedObject var timer: TimeCounter
+    let title: String
+    let color: Color
+    let action: () -> Void
     
     var body: some View {
-        Button(action: timer.startTimer) {
-            Text(timer.buttonTitle)
+        Button(action: action) {
+            Text(title)
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
         }
         .frame(width: 200, height: 60)
-        .background(.red)
+        .background(color)
         .cornerRadius(20)
         .overlay(RoundedRectangle(cornerRadius: 20).stroke(.black, lineWidth: 4))
+    }
+}
+
+struct TimerView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environmentObject(UserManager())
     }
 }

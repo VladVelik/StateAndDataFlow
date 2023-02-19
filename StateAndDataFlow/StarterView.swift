@@ -12,7 +12,7 @@ struct StarterView: View {
     
     var body: some View {
         Group {
-            if user.isRegister {
+            if user.user.isRegistered {
                 ContentView()
             } else {
                 RegisterView()

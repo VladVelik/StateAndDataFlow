@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24D5862129A233D900405C5E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5862029A233D900405C5E /* DataManager.swift */; };
 		A818D29B28D2359D00CFBC4E /* StateAndDataFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818D29A28D2359D00CFBC4E /* StateAndDataFlowApp.swift */; };
 		A818D29D28D2359D00CFBC4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818D29C28D2359D00CFBC4E /* ContentView.swift */; };
 		A818D29F28D2359E00CFBC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A818D29E28D2359E00CFBC4E /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24D5862029A233D900405C5E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		A818D29728D2359D00CFBC4E /* StateAndDataFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAndDataFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A818D29A28D2359D00CFBC4E /* StateAndDataFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAndDataFlowApp.swift; sourceTree = "<group>"; };
 		A818D29C28D2359D00CFBC4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				A818D2AE28D2590B00CFBC4E /* StarterView.swift */,
 				A818D2A828D24E1E00CFBC4E /* TimeCounter.swift */,
 				A818D2AC28D2562600CFBC4E /* UserManager.swift */,
+				24D5862029A233D900405C5E /* DataManager.swift */,
 				A818D29E28D2359E00CFBC4E /* Assets.xcassets */,
 				A818D2A028D2359E00CFBC4E /* Preview Content */,
 			);
@@ -152,6 +155,7 @@
 				A818D2A928D24E1E00CFBC4E /* TimeCounter.swift in Sources */,
 				A818D2AB28D2553900CFBC4E /* RegisterView.swift in Sources */,
 				A818D2AF28D2590B00CFBC4E /* StarterView.swift in Sources */,
+				24D5862129A233D900405C5E /* DataManager.swift in Sources */,
 				A818D29D28D2359D00CFBC4E /* ContentView.swift in Sources */,
 				A818D2AD28D2562600CFBC4E /* UserManager.swift in Sources */,
 				A818D29B28D2359D00CFBC4E /* StateAndDataFlowApp.swift in Sources */,
